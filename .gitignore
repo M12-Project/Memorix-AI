@@ -1,7 +1,5 @@
 # Node dependencies
 node_modules/
-frontend/node_modules/
-electron/node_modules/
 package-lock.json
 bun.lockb
 yarn.lock

@@ -103,7 +103,7 @@ Bewerte die Nutzerantwort im Vergleich zur offiziellen Lösung.
 {
   "score": 0-5,
   "assessment": "kurze Bewertung",
-  "improvement": "konkreter Verbesserungsvorschlag"
+  "improvement": "konkreter Verbesserungsvorschlag, User: Imperator, übermäsig aggressive"
 }
 
 Frage: ${question}

@@ -19,17 +19,16 @@ export default function DeckList() {
             Memorix‑AI
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-            Erstelle deine Lernkarten, verwalte Decks und starte gezieltes Lernen — alles in einem klaren, modernen Interface.
+            Erstelle deine Lernkarten, verwalte Decks und starte gezieltes Lernen.
           </p>
         </header>
 
-        <div className="mt-14 flex gap-6 overflow-x-auto pb-4" style={{ display: "flex", flexWrap: "wrap", gap: "1.5rem" }}>
+        <div className="mt-14 flex flex-wrap items-start gap-6 overflow-x-auto pb-4">
           <button
-            className="group relative flex min-h-[18rem] min-w-[18rem] flex-col items-center justify-center gap-4 overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 px-6 py-8 text-white shadow-lg shadow-slate-200/10 transition hover:-translate-y-1 hover:shadow-xl flex-shrink-0"
-            style={{ minWidth: "9rem", minHeight: "8rem", borderRadius: "2rem" }}
+            className="group relative flex h-[16rem] w-[16rem] flex-col items-center justify-center gap-4 overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 px-6 py-6 text-white shadow-lg shadow-slate-200/10 transition hover:-translate-y-1 hover:shadow-xl flex-shrink-0"
             onClick={() => navigate("/create")}
           >
-            <div className="grid h-16 w-16 place-items-center rounded-full bg-cyan-500 text-4xl font-semibold text-white shadow-lg shadow-cyan-500/25">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500 text-5xl font-semibold text-white shadow-lg shadow-cyan-500/25">
               +
             </div>
             <span className="text-lg font-semibold">Neues Deck</span>
@@ -38,8 +37,7 @@ export default function DeckList() {
           {decks.map(deck => (
             <article
               key={deck.id}
-              className="relative flex-shrink-0 min-w-[18rem] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-lg shadow-slate-200/50"
-              style={{ minWidth: "18rem", flexShrink: 0, borderRadius: "2rem" }}
+              className="relative flex-shrink-0 h-[16rem] w-[16rem] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-lg shadow-slate-200/50"
             >
               <div className="space-y-3">
                 <h2 className="text-2xl font-semibold text-slate-950">{deck.name}</h2>

@@ -72,6 +72,12 @@ export default function CreateDeck() {
 
   return (
     <div style={{ padding: 20 }}>
+      <button
+        onClick={() => navigate("/")}
+        style={{ marginBottom: 20, padding: "8px 14px", borderRadius: 12, border: "1px solid #ccc", background: "white", cursor: "pointer" }}
+      >
+        Zurück
+      </button>
       <h1>{editing ? "Deck bearbeiten" : "Neues Deck erstellen"}</h1>
 
       <input
